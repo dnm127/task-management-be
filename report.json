@@ -1,0 +1,157 @@
+{
+  "individualResults": [
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "public",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.22.3",
+      "database": "task-management",
+      "warnings": [],
+      "timestamp": "2023-12-27T11:33:01.814008",
+      "operation": "migrate",
+      "exception": "Migration V1.0.0__Initialization.sql failed\n-------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"user\"\n  Position: 28\nLocation   : /Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql (/Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql)\nLine       : 4\nStatement  : CREATE TABLE IF NOT EXISTS user (\n    id DEFAULT uuid_generate_v4() PRIMARY KEY NOT NULL,\n    username TEXT NOT NULL, \n    password TEXT NOT NULL,\n    profile_image TEXT,\n    bio TEXT\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "public",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.22.3",
+      "database": "task-management",
+      "warnings": [],
+      "timestamp": "2023-12-27T11:36:48.126544",
+      "operation": "migrate",
+      "exception": "Migration V1.0.0__Initialization.sql failed\n-------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"DEFAULT\"\n  Position: 46\nLocation   : /Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql (/Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql)\nLine       : 4\nStatement  : CREATE TABLE IF NOT EXISTS app_user (\n    id DEFAULT uuid_generate_v4() PRIMARY KEY NOT NULL,\n    username TEXT NOT NULL, \n    password TEXT NOT NULL,\n    profile_image TEXT,\n    bio TEXT\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "public",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.22.3",
+      "database": "task-management",
+      "warnings": [],
+      "timestamp": "2023-12-27T11:37:04.084276",
+      "operation": "migrate",
+      "exception": "Migration V1.0.0__Initialization.sql failed\n-------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \")\"\n  Position: 63\nLocation   : /Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql (/Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql)\nLine       : 4\nStatement  : CREATE TABLE IF NOT EXISTS app_user (\n    id uuid_generate_v4() PRIMARY KEY NOT NULL,\n    username TEXT NOT NULL, \n    password TEXT NOT NULL,\n    profile_image TEXT,\n    bio TEXT\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "public",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.22.3",
+      "database": "task-management",
+      "warnings": [],
+      "timestamp": "2023-12-27T11:42:51.724972",
+      "operation": "migrate",
+      "exception": "Migration V1.0.0__Initialization.sql failed\n-------------------------------------------\nSQL State  : 42710\nError Code : 0\nMessage    : ERROR: type \"status_enum\" already exists\nLocation   : /Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql (/Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql)\nLine       : 2\nStatement  : CREATE TYPE status_enum as ENUM (\u0027active\u0027,\u0027doing\u0027,\u0027done\u0027)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "public",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.22.3",
+      "database": "task-management",
+      "warnings": [],
+      "timestamp": "2023-12-27T11:43:22.806559",
+      "operation": "migrate",
+      "exception": "Migration V1.0.0__Initialization.sql failed\n-------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"NOT\"\n  Position: 16\nLocation   : /Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql (/Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql)\nLine       : 2\nStatement  : CREATE TYPE IF NOT EXISTS status_enum as ENUM (\u0027active\u0027,\u0027doing\u0027,\u0027done\u0027)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "public",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.22.3",
+      "database": "task-management",
+      "warnings": [],
+      "timestamp": "2023-12-27T11:44:04.670789",
+      "operation": "migrate",
+      "exception": "Migration V1.0.0__Initialization.sql failed\n-------------------------------------------\nSQL State  : 42710\nError Code : 0\nMessage    : ERROR: type \"status_enum\" already exists\nLocation   : /Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql (/Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql)\nLine       : 2\nStatement  : CREATE TYPE status_enum as ENUM (\u0027active\u0027,\u0027doing\u0027,\u0027done\u0027)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "public",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.22.3",
+      "database": "task-management",
+      "warnings": [],
+      "timestamp": "2023-12-27T11:44:34.891903",
+      "operation": "migrate",
+      "exception": "Migration V1.0.0__Initialization.sql failed\n-------------------------------------------\nSQL State  : 42703\nError Code : 0\nMessage    : ERROR: column \"user_id\" referenced in foreign key constraint does not exist\nLocation   : /Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql (/Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql)\nLine       : 12\nStatement  : CREATE TABLE IF NOT EXISTS task (\n    id UUID DEFAULT uuid_generate_v4() PRIMARY KEY NOT NULL,\n    title TEXT NOT NULL,\n    status status_enum NOT NULL,\n    description TEXT,\n    expiration TIMESTAMP,\n    CONSTRAINT FK_user_id FOREIGN KEY (user_id) REFERENCES app_user (id)\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "1.0.0",
+      "schemaName": "public",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "Initialization",
+          "type": "SQL",
+          "filepath": "/Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.0__Initialization.sql",
+          "executionTime": 28
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.22.3",
+      "database": "task-management",
+      "warnings": [],
+      "timestamp": "2023-12-27T11:46:59.229551",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.0",
+      "targetSchemaVersion": "1.0.1",
+      "schemaName": "public",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.1",
+          "description": "Update Table v1",
+          "type": "SQL",
+          "filepath": "/Users/minhdang/Documents/Learning/task-managment/task-management-be/flyway/migration/sql/V1.0.1__Update_Table_v1.sql",
+          "executionTime": 15
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.22.3",
+      "database": "task-management",
+      "warnings": [],
+      "timestamp": "2023-12-27T15:11:58.767028",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}
